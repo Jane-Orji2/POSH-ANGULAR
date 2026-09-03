@@ -1,0 +1,23 @@
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 60px 0 40px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+footer-text {
+  margin-bottom: 24px;
+}
+
+.footer-copy {
+  border-top: 1px solid #1e293b;
+  padding-top: 24px;
+  color: #64748b;
+}
