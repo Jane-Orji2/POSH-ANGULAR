@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ShowcaseComponent } from '../body/showcase';
+import { ContactComponent } from '../../contact/contact';
+import { HeroComponent } from '../hero/hero';
 
 
 @Component({
-  imports: [CommonModule,ShowcaseComponent],
+  imports: [CommonModule,ShowcaseComponent, ContactComponent, HeroComponent],
   selector: 'app-home',
   styleUrl: './home.css',
   templateUrl: './home.html',

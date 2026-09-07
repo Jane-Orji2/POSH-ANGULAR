@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hero.css',
   templateUrl: './hero.html',
 })
-export class Hero {
+export class HeroComponent {
    @Input() headline: string = '';
   @Input() subtext: string = '';
   @Input() ctaLabel: string = 'Get Started';

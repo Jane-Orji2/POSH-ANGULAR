@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<section class="contact" id="contact">
+  <h2>Get In Touch</h2>
+
+  @if (!submitted()) {
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input id="name" type="text" formControlName="name" />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" />
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" formControlName="message"></textarea>
+      </div>
+
+      <button type="submit" [disabled]="contactForm.invalid">
+        Send Message
+      </button>
+    </form>
+  }
+
+  @if (submitted()) {
+    <div class="thanks">
+      <h3>Thanks for reaching out!</h3>
+      <p>We've received your message and will get back to you soon.</p>
+      <button (click)="sendAnother()">Send another message</button>
+    </div>
+  }
+</section>
